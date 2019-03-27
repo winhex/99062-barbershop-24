@@ -3,10 +3,166 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Барбершоп</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+    <header class="main-header">
+        <div class="container">
+        <nav class="main-nav">
+            <h2 class="visually-hidden">Навигация по сайту</h2>
+          
+            <ul class="main-nav__list">
+                <li class="main-nav__item">
+                    <a class="main-nav__link" href="">информация</a>
+
+                </li>
+                <li class="main-nav__item">
+                    <a class="main-nav__link" href="">новости</a>
+
+                </li>
+                <li class="main-nav__item">
+                    <a class="main-nav__link" href="">прайс-лист</a>
+                </li>
+                <li class="main-nav__item">
+                    <a class="main-nav__link" href="">магазин</a>
+                </li>
+                <li class="main-nav__item">
+                    <a class="main-nav__link" href="">контакты</a>
+                </li>
+            </ul>
+          
+          <a href="#" class="main-header__login">вход</a>
+
+        </nav>
+        </div>
+    </header>
+
+    <main class="main-content container">
+        <section class="main-logo">
+            <h2 class="main-logo__header visually-hidden">Барбершоп "Бородинский"</h2>
+            <img class="main-logo__img" src="img/index-logo.png" alt="Логотип Барбершоп" width="371" height="155">
+        </section>
+        <section class="merits">
+            <ul class="merits__list">
+                <li class="merits__item">
+                    <h3 class="merits__title">
+                        быстро
+                    </h3>
+                    <p class="merits__text">
+                        мы делаем свою работу быстро! два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки!
+                    </p>
+                    
+                </li>
+                <li class="merits__item">
+                    <h3 class="merits__title">
+                        круто
+                    </h3>
+                    <p class="merits__text">
+                        забудьте, как вы стриглись раньше. мы сделаем из вас  звезду футбола или кино! во всяком случае внешне.
+
+                    </p>
+                    
+                </li>
+                <li class="merits__item">
+                    <h3 class="merits__title">
+                        дорого
+                    </h3>
+                    <p class="merits__text">
+                        наши мастера — профессионалы своего дела и не могут стоить дешево. к тому же, разве цена не дает определеный статус?
+                    </p>
+                </li>
+            </ul>
+            
+        </section>
+
+        <section class="news">
+            <h2 class="news__title">
+                новости
+            </h2>
+            <p class="news__text">
+                нам наконец завезли ягермайстер! теперь вы можете пропустить стаканчик во время стрижки
+            </p>
+            <time datetime="2019-01-11" class="merits__date">
+                        11 января
+                    </time>
+            <p class="news__text">
+                в нашей команде пополнение, борис «бритва» стригунец, обладaтель множества титулов и наград пополнил наши стройные ряды
+            </p>
+            <time datetime="2019-01-18" class="merits__date">
+                        18 января
+                    </time>
+            <button class="news__btn">все новости</button>
+        </section>
+        <section class="gallery">
+            <h2 class="gallery__title">фотогалерея</h2>
+            <img class="gallery__img" src="" alt="">
+            <button class="gallery__btn">назад</button>
+            <button class="gallery__btn">вперед</button>
+        </section>
+
+        <section class="contacts">
+            <div class="contacts__info">
+                <h2 class="contacts__title">
+                    контактная информация
+                </h2>
+                <p class="contacts__text">барбершоп «бородинский» адрес: г. санкт-петербург, б. конюшенная, д. 19/8 телефон: +7 (495) 666-02-66</p>
+                <div class="contacts__time-work">
+                    <p class="contacts__text">
+                        время работы: пн—пт: с 10:00 до 22:00 сб—вс: с 10:00 до 19:00
+                    </p>
+                </div>
+                <button class="contacts__button">как проехать</button>
+                <button class="contacts__button">обратная связь</button>
+            </div>
+            <div class="contacts__booking">
+                <h2 class="contacts__title">записаться</h2>
+                <p class="contacts__text">укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+                
+                    
+                    
+            </div>
+                <button class="contacts__button">
+                    отправить
+                </button>
+            </div>
+        </section>
+
+        
+    </main>
+    <footer class="main-footer">
+        <div class="main-footer__contacts">
+            <p class="main-footer__text">
+                барбершоп «бородинский» адрес: г. санкт-петербург, ул. б. конюшенная, д. 19/8
+              <a class="main-footer__link" href="#">
+                как нас найти?
+             </a>
+
+             <p class="main-footer__text"> 
+                телефон: +7 (495) 666-02-66
+            </p>
+
+                
+            </p>
+            
+        </div>
+
+        <div class="main-footer__social">
+            <p class="main-footer__text">давайте дружить</p>
+            <a class="main-footer__social link--vk" href=""></a>
+            <a class="main-footer__social link--fb" href=""></a>
+            <a class="main-footer__social link--instagram" href=""></a>
+        </div>
+        <div class="main-footer__copyright">
+            <p class="main-footer__text">
+                разработано
+            </p>
+            <a class="main-footer__develop" href="#">
+                
+            </a>
+        </div>
+    </footer>
 
   </body>
 </html>
