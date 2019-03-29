@@ -3,8 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Барбершоп</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    
   </head>
   <body>
 
@@ -47,35 +49,24 @@
         <section class="merits">
             <ul class="merits__list">
                 <li class="merits__item">
-                    <h3 class="merits__title">
-                        быстро
-                    </h3>
-                    <p class="merits__text">
-                        мы делаем свою работу быстро! два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки!
-                    </p>
+                    <h3 class="merits__title">быстро</h3>
+                    <p class="merits__text">мы делаем свою работу быстро! два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки!</p>
                     
                 </li>
                 <li class="merits__item">
-                    <h3 class="merits__title">
-                        круто
-                    </h3>
-                    <p class="merits__text">
-                        забудьте, как вы стриглись раньше. мы сделаем из вас  звезду футбола или кино! во всяком случае внешне.
-
-                    </p>
+                    <h3 class="merits__title">круто</h3>
+                    <p class="merits__text">забудьте, как вы стриглись раньше. мы сделаем из вас  звезду футбола или кино! во всяком случае внешне.</p>
                     
                 </li>
                 <li class="merits__item">
-                    <h3 class="merits__title">
-                        дорого
-                    </h3>
-                    <p class="merits__text">
-                        наши мастера — профессионалы своего дела и не могут стоить дешево. к тому же, разве цена не дает определеный статус?
-                    </p>
+                    <h3 class="merits__title">дорого</h3>
+                    <p class="merits__text">наши мастера — профессионалы своего дела и не могут стоить дешево. к тому же, разве цена не дает определеный статус?</p>
                 </li>
             </ul>
             
         </section>
+
+        <div class="top-content">
 
         <section class="news">
             <h2 class="news__title">
@@ -93,75 +84,113 @@
             <time datetime="2019-01-18" class="merits__date">
                         18 января
                     </time>
-            <button class="news__btn">все новости</button>
+            
+                <a class="news__btn button " href="#">все новости</a>
+                
         </section>
         <section class="gallery">
             <h2 class="gallery__title">фотогалерея</h2>
-            <img class="gallery__img" src="" alt="">
-            <button class="gallery__btn">назад</button>
-            <button class="gallery__btn">вперед</button>
+            <img class="gallery__img" src="img/Layer_21.png" width="286" height="164" alt="фото">
+            <a class="gallery__btn button " href="#">назад</a>
+            <a class="gallery__btn button " href="#">вперед</a>
         </section>
+      </div>
+      <div class="bottom-content"> 
 
         <section class="contacts">
             <div class="contacts__info">
                 <h2 class="contacts__title">
                     контактная информация
                 </h2>
-                <p class="contacts__text">барбершоп «бородинский» адрес: г. санкт-петербург, б. конюшенная, д. 19/8 телефон: +7 (495) 666-02-66</p>
+                <p class="contacts__text">барбершоп «бородинский» <br> адрес: г. санкт-петербург, б. конюшенная, д. 19/8 <br> телефон: +7 (495) 666-02-66</p>
                 <div class="contacts__time-work">
                     <p class="contacts__text">
-                        время работы: пн—пт: с 10:00 до 22:00 сб—вс: с 10:00 до 19:00
+                        время работы: <br> пн—пт: с 10:00 до 22:00 <br> сб—вс: с 10:00 до 19:00
                     </p>
                 </div>
-                <button class="contacts__button">как проехать</button>
-                <button class="contacts__button">обратная связь</button>
+                <a class="contacts__btn button ">как проехать</a>
+                <a class="contacts__btn button ">обратная связь</a>
             </div>
-            <div class="contacts__booking">
-                <h2 class="contacts__title">записаться</h2>
-                <p class="contacts__text">укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+            <div class="appointment__booking">
+                <h2 class="appointment__title">записаться</h2>
+                <p class="appointment__text">укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+                <form class="appointment__form" method="get" action="https://echo.htmlacademy.ru">
+                    <div>
+                    <div class="appointment__form-item">
+                    <label class="appointment__form-title" for="appointment-date">Дата</label>
+                    <input class="appointment__form-input" id="appointment-date" type="text" name="date" value="" placeholder="08.10.2017">
+                    </div>
+
+                    <div class="appointment__form-item">
+                            <label class="appointment__form-title" for="appointment-time">Ваше имя</label>
+                            <input class="appointment__form-input" id="appointment-time" type="text" name="name" value="" placeholder="Борода">
+                    </div>
+                </div>
+                <div>
+
+                    <div class="appointment__form-item">
+                            <label class="appointment__form-title" for="appointment-time">Время</label>
+                            <input class="appointment__form-input" id="appointment-time" type="text" name="time" value="" placeholder="10:00">
+                        
+                    </div>
+                    
+                    <div class="appointment__form-item">
+                       <label class="appointment__form-title" for="appointment-time">Телефон</label>
+                       <input class="appointment__form-input" id="appointment-time" type="text" name="phone" value="" placeholder="+7 123 456-78-90">
+                    </div>
+                </div>
+
+                        <button class="appointment__btn button" type="submit">
+                        отправить
+                    </button>            
+                </form>
                 
                     
-                    
+                
             </div>
-                <button class="contacts__button">
-                    отправить
-                </button>
-            </div>
+                
+            
         </section>
+    </div>
+    </div>
 
         
     </main>
-    <footer class="main-footer">
-        <div class="main-footer__contacts">
-            <p class="main-footer__text">
-                барбершоп «бородинский» адрес: г. санкт-петербург, ул. б. конюшенная, д. 19/8
-              <a class="main-footer__link" href="#">
+     
+    <footer class="footer">
+            <div class="footer__content container">
+        <div class="footer__contacts">
+            <p class="footer__text">
+                барбершоп «бородинский» <br> адрес: г. санкт-петербург, ул. б. конюшенная, д. 19/8 <br>
+              <a class="footer__contacts-link" href="#">
                 как нас найти?
              </a>
 
-             <p class="main-footer__text"> 
-                телефон: +7 (495) 666-02-66
-            </p>
+             <!-- <p class="footer__text text-phone">  -->
+               <br> телефон: +7 (495) 666-02-66
+            <!-- </p> -->
 
                 
             </p>
             
         </div>
+       
 
-        <div class="main-footer__social">
-            <p class="main-footer__text">давайте дружить</p>
-            <a class="main-footer__social link--vk" href=""></a>
-            <a class="main-footer__social link--fb" href=""></a>
-            <a class="main-footer__social link--instagram" href=""></a>
+        <div class="footer__social">
+            <p class="footer__text social--text">давайте дружить</p>
+            <a class="footer__social-link social-link--vk" href=""></a>
+            <a class="footer__social-link social-link--fb" href=""></a>
+            <a class="footer__social-link social-link--instagram" href=""></a>
         </div>
-        <div class="main-footer__copyright">
-            <p class="main-footer__text">
+        <div class="footer__copyright">
+            <p class="footer__text developer-text">
                 разработано
             </p>
-            <a class="main-footer__develop" href="#">
-                
+            <a class="footer__developer" href="#">
+                html academy
             </a>
         </div>
+    </div>
     </footer>
 
   </body>
