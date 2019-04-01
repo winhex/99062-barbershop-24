@@ -34,6 +34,14 @@
      box-sizing: inherit;
  }
 
+ /*                                                 отладка*/
+img:not([alt]),
+label:not([for]),
+input[type=submit]:not([value]) {
+  outline:2px solid red;
+}
+/*                                                  отладка*/
+
  .visually-hidden {
      position: absolute;
      clip: rect(0 0 0 0);
@@ -521,7 +529,7 @@ text-transform: uppercase;
      text-decoration: none;
 }
 
-.footer__social-link {
+.footer__link {
      display: inline-block;
      width: 43px;
      height: 43px;
@@ -531,8 +539,8 @@ text-transform: uppercase;
      margin-right: 3px;
 }
 
-.footer__social-link:hover,
-.footer__social-link:focus,
+.footer__link:hover,
+.footer__link:focus,
 .footer__developer:hover,
 .footer__developer:focus
  {

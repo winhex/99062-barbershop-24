@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Барбершоп</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style-shop.css">
+    
+  </head>
+
+  <body>
+    <header class="main-header">
+        <div class="container">
+        <nav class="main-nav">
+            <h2 class="visually-hidden">Навигация по сайту</h2>
+            <a class="main-header__logo" href="index.html">
+                <img src="img/logo.png" alt="Логотип Барбершоп" width="111" height="24">
+            </a>
+          
+            <ul class="main-nav__list">
+                <li class="main-nav__item">
+                    <a class="main-nav__link" href="#">информация</a>
+
+                </li>
+                <li class="main-nav__item">
+                    <a class="main-nav__link" href="#">новости</a>
+
+                </li>
+                <li class="main-nav__item">
+                    <a class="main-nav__link" href="#">прайс-лист</a>
+                </li>
+                <li class="main-nav__item nav-item--active">
+                    <a class="main-nav__link" href="#">магазин</a>
+                </li>
+                <li class="main-nav__item">
+                    <a class="main-nav__link" href="#">контакты</a>
+                </li>
+            </ul>
+          
+          <a href="#" class="main-header__login">вход</a>
+
+        </nav>
+        </div>
+    </header>
+<main class="shop__main container">
+    <h1 class="shop__title">средства для ухода</h1>
+    <div class="breadcrumbs">
+        <span class="breadcrumbs__item">
+            <a href="index.html" class="breadcrumbs__link">главная</a>
+        </span>
+        <span class="breadcrumbs__item">
+            <a href="#" class="breadcrumbs__link">магазин</a>
+        </span>
+        <span class="breadcrumbs__item breadcrumbs--active">
+            <a href="#" class="breadcrumbs__link">средства для ухода</a>
+        </span>
+    </div>
+    <div class="main-content">
+        
+    
+
+    <aside class="shop__filter left-column">
+        <h2 class="visually-hidden">Фильтр товаров</h2>
+        <form class="shop__form" method="get" action="https://echo.htmlacademy.ru">
+            <fieldset class="shop__fieldset">
+                <legend class="shop__filter-title">
+                    производители:
+                </legend>
+                <ul class="shop__brands">
+                    <li class="shop__brands-item"><input class="shop__brands-input" name="Baxter of California" type="checkbox" checked="">Baxter of California</li>
+                    <li class="shop__brands-item"><input class="shop__brands-input" name="Mr Natty " type="checkbox">Mr Natty</li>
+                    <li class="shop__brands-item"><input class="shop__brands-input" name="Suavecito" type="checkbox" checked="">Suavecito</li>
+                    <li class="shop__brands-item"><input class="shop__brands-input" name="Malin+Goetz" type="checkbox">Malin+Goetz</li>
+                    <li class="shop__brands-item"><input class="shop__brands-input" name="Murray’s" type="checkbox">Murray’s</li>
+                    <li class="shop__brands-item"><input class="shop__brands-input" name="American Crew" type="checkbox" checked="">American Crew</li>
+                </ul>
+            
+            </fieldset>
+
+            <fieldset class="shop__fieldset">
+                <legend class="shop__filter-title">
+                    группы товаров:
+                </legend>
+            <ul class="shop__goods-type">
+                <li class="shop__goods-type-item"> <input type="radio" id="shaving" value="shaving" class="shop__goods-type-input"> 
+                    <label for="shaving">Бритвенные принадлежности</label>
+                    
+                </li>
+                <li class="shop__goods-type-item"> <input type="radio" id="care" value="care" class="shop__goods-type-input"> 
+                    <label for="care">Средства для ухода</label>
+                    
+                </li>
+                <li class="shop__goods-type-item"> <input type="radio" id="accessories" value="accessories" class="shop__goods-type-input"> 
+                    <label for="accessories">Аксессуары</label>
+                    
+                </li>
+            </ul>
+            </fieldset>
+
+            <button type="submit" class="shop__form-button button">
+            Показать
+          </button>
+        </form>
+        
+    </aside>
+
+    <div class="right-column">
+    <ul class="goods">
+        <li class="goods__item">
+            <img class="goods__img" src="img/Layer_38.jpg" alt="фото товара" width="220" height="165">
+            <div class="goods-wrapper">
+            <h3 class="goods__title">
+                Набор для путешествий <br> «BAXTER OF CALIFORNIA»
+            </h3>
+            <span class="goods__price">
+                2 900 ₽
+            </span>
+            <a href="#" class="goods__buy button">
+                купить
+            </a>
+            </div>
+        </li>
+        <li class="goods__item">
+            <img class="goods__img" src="img/Layer_38.jpg" alt="фото товара">
+            <div class="goods-wrapper">
+            <h3 class="goods__title">
+                Набор для путешествий <br> «BAXTER OF CALIFORNIA»
+            </h3>
+            <span class="goods__price">
+                2 900 ₽
+            </span>
+            <a href="#" class="goods__buy button">
+                купить
+            </a>
+            </div>
+        </li>
+        <li class="goods__item">
+            <img class="goods__img" src="img/Layer_38.jpg" alt="фото товара">
+            <div class="goods-wrapper">
+            <h3 class="goods__title">
+                Набор для путешествий <br> «BAXTER OF CALIFORNIA»
+            </h3>
+            <span class="goods__price">
+                2 900 ₽
+            </span>
+            <a href="#" class="goods__buy button">
+                купить
+            </a>
+            </div>
+        </li>
+        <li class="goods__item">
+            <img class="goods__img" src="img/Layer_38.jpg" alt="фото товара">
+            <div class="goods-wrapper">
+            <h3 class="goods__title">
+                Набор для путешествий <br> «BAXTER OF CALIFORNIA»
+            </h3>
+            <span class="goods__price">
+                2 900 ₽
+            </span>
+            <a href="#" class="goods__buy button">
+                купить
+            </a>
+            </div>
+        </li>
+        <li class="goods__item">
+            <img class="goods__img" src="img/Layer_38.jpg" alt="фото товара">
+            <div class="goods-wrapper">
+            <h3 class="goods__title">
+                Набор для путешествий <br> «BAXTER OF CALIFORNIA»
+            </h3>
+            <span class="goods__price">
+                2 900 ₽
+            </span>
+            <a href="#" class="goods__buy button">
+                купить
+            </a>
+            </div>
+        </li>
+
+        <li class="goods__item">
+            <img class="goods__img" src="img/Layer_38.jpg" alt="фото товара">
+            <div class="goods-wrapper">
+            <h3 class="goods__title">
+                Набор для путешествий <br> «BAXTER OF CALIFORNIA»
+            </h3>
+            <span class="goods__price">
+                2 900 ₽
+            </span>
+            <a href="#" class="goods__buy button">
+                купить
+            </a>
+            </div>
+        </li>
+        
+    </ul>
+
+    <div class="pager">
+        <a href="#" class="pager__item">1</a>
+        <a href="#" class="pager__item pager__item--active">2</a>
+        <a href="#" class="pager__item">3</a>
+        <a href="#" class="pager__item">4</a>
+    </div>
+    </div>
+    </div>
+</main>
+    <footer class="footer">
+            <div class="footer__content container">
+        <div class="footer__contacts">
+            <p class="footer__text">
+                барбершоп «бородинский» <br> адрес: г. санкт-петербург, ул. б. конюшенная, д. 19/8 <br>
+              <a class="footer__contacts-link" href="#">
+                как нас найти?
+             </a>
+
+             <!-- <p class="footer__text text-phone">  -->
+               <br> телефон: +7 (495) 666-02-66
+            <!-- </p> -->
+
+                
+            </p>
+            
+        </div>
+       
+
+        <div class="footer__social">
+            <p class="footer__text social--text">давайте дружить</p>
+            <a class="footer__link social-link--vk" href=""></a>
+            <a class="footer__link social-link--fb" href=""></a>
+            <a class="footer__link social-link--instagram" href=""></a>
+        </div>
+        <div class="footer__copyright">
+            <p class="footer__text developer-text">
+                разработано
+            </p>
+            <a class="footer__developer" href="#">
+                html academy
+            </a>
+        </div>
+    </div>
+    </footer>
+
+  </body>
+
+  </html>
