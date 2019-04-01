@@ -499,6 +499,7 @@ text-transform: uppercase;
      flex-direction: row;
      /* justify-content: space-between; */
      padding-top: 44px;
+     padding-bottom: 23px;
      
 }
 
