@@ -46,21 +46,15 @@
 <main class="shop__main container">
     <h1 class="shop__title">средства для ухода</h1>
     <div class="breadcrumbs">
-        <span class="breadcrumbs__item">
-            <a href="index.html" class="breadcrumbs__link">главная</a>
-        </span>
-        <span class="breadcrumbs__item">
-            <a href="#" class="breadcrumbs__link">магазин</a>
-        </span>
-        <span class="breadcrumbs__item breadcrumbs--active">
-            <a href="#" class="breadcrumbs__link">средства для ухода</a>
-        </span>
+        <span class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link">главная</a></span>
+        <span class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">магазин</a></span>
+        <span class="breadcrumbs__item breadcrumbs--active"><a href="#" class="breadcrumbs__link">средства для ухода</a></span>
     </div>
     <div class="main-content">
         
     
 
-    <aside class="shop__filter left-column">
+    <section class="shop__filter left-column">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form class="shop__form" method="get" action="https://echo.htmlacademy.ru">
             <fieldset class="shop__fieldset">
@@ -68,12 +62,30 @@
                     производители:
                 </legend>
                 <ul class="shop__brands">
-                    <li class="shop__brands-item"><input class="shop__brands-input" name="Baxter of California" type="checkbox" checked="">Baxter of California</li>
-                    <li class="shop__brands-item"><input class="shop__brands-input" name="Mr Natty " type="checkbox">Mr Natty</li>
-                    <li class="shop__brands-item"><input class="shop__brands-input" name="Suavecito" type="checkbox" checked="">Suavecito</li>
-                    <li class="shop__brands-item"><input class="shop__brands-input" name="Malin+Goetz" type="checkbox">Malin+Goetz</li>
-                    <li class="shop__brands-item"><input class="shop__brands-input" name="Murray’s" type="checkbox">Murray’s</li>
-                    <li class="shop__brands-item"><input class="shop__brands-input" name="American Crew" type="checkbox" checked="">American Crew</li>
+                    <li class="shop__brands-item">
+                        <input class="visually-hidden shop__brands-checkbox" id="baxter" name="Baxter of California" type="checkbox" checked="">
+                        
+                    <label class="shop__brands-input" for="baxter">Baxter of California</label></li>
+                    <li class="shop__brands-item">
+                        <input class="visually-hidden shop__brands-checkbox" id="mr-natty" name="Mr Natty " type="checkbox">
+                        
+                    <label class="shop__brands-input" for="mr-natty">mr-Natty</label></li>
+                    <li class="shop__brands-item">
+                        <input class="visually-hidden shop__brands-checkbox" id="Suavecito" name="Suavecito" type="checkbox" checked="">
+                        
+                    <label class="shop__brands-input" for="Suavecito">Suavecito</label></li>
+                    <li class="shop__brands-item">
+                        <input class="visually-hidden shop__brands-checkbox" id="Malin+Goetz" name="Malin+Goetz" type="checkbox">
+                        
+                    <label class="shop__brands-input" for="Malin+Goetz">Malin+Goetz</label></li>
+                    <li class="shop__brands-item">
+                        <input class="visually-hidden shop__brands-checkbox" id="Murray’s" name="Murray’s" type="checkbox">
+                        
+                    <label class="shop__brands-input" for="Murray’s">Murray’s</label></li>
+                    <li class="shop__brands-item">
+                        <input class="visually-hidden shop__brands-checkbox" id="American-Crew" name="American Crew" type="checkbox" checked="">
+                        
+                    <label class="shop__brands-input" for="American-Crew">American Crew</label></li>
                 </ul>
             
             </fieldset>
@@ -83,16 +95,19 @@
                     группы товаров:
                 </legend>
             <ul class="shop__goods-type">
-                <li class="shop__goods-type-item"> <input type="radio" id="shaving" value="shaving" class="shop__goods-type-input"> 
-                    <label for="shaving">Бритвенные принадлежности</label>
+                <li class="shop__goods-type-item"> 
+                    <input class="visually-hidden shop__goods-radio" type="radio" id="shaving" value="shaving" class="shop__goods-type-input" name="product-group"> 
+                    <label class="shop__goods-input" for="shaving">Бритвенные принадлежности</label>
                     
                 </li>
-                <li class="shop__goods-type-item"> <input type="radio" id="care" value="care" class="shop__goods-type-input"> 
-                    <label for="care">Средства для ухода</label>
+                <li class="shop__goods-type-item"> 
+                    <input class="visually-hidden shop__goods-radio" type="radio" id="care" value="care" class="shop__goods-type-input" name="product-group" checked> 
+                    <label class="shop__goods-input" for="care">Средства для ухода</label>
                     
                 </li>
-                <li class="shop__goods-type-item"> <input type="radio" id="accessories" value="accessories" class="shop__goods-type-input"> 
-                    <label for="accessories">Аксессуары</label>
+                <li class="shop__goods-type-item"> 
+                    <input class="visually-hidden shop__goods-radio" type="radio" id="accessories" value="accessories" class="shop__goods-type-input" name="product-group"> 
+                    <label class="shop__goods-input" for="accessories">Аксессуары</label>
                     
                 </li>
             </ul>
@@ -103,7 +118,7 @@
           </button>
         </form>
         
-    </aside>
+    </section>
 
     <div class="right-column">
     <ul class="goods">
@@ -122,7 +137,7 @@
             </div>
         </li>
         <li class="goods__item">
-            <img class="goods__img" src="img/Layer_38.jpg" alt="фото товара">
+            <img class="goods__img" src="img/Layer_38.jpg" alt="фото товара" width="220" height="165">
             <div class="goods-wrapper">
             <h3 class="goods__title">
                 Набор для путешествий <br> «BAXTER OF CALIFORNIA»
@@ -136,7 +151,7 @@
             </div>
         </li>
         <li class="goods__item">
-            <img class="goods__img" src="img/Layer_38.jpg" alt="фото товара">
+            <img class="goods__img" src="img/Layer_38.jpg" alt="фото товара" width="220" height="165">
             <div class="goods-wrapper">
             <h3 class="goods__title">
                 Набор для путешествий <br> «BAXTER OF CALIFORNIA»
@@ -150,7 +165,7 @@
             </div>
         </li>
         <li class="goods__item">
-            <img class="goods__img" src="img/Layer_38.jpg" alt="фото товара">
+            <img class="goods__img" src="img/Layer_38.jpg" alt="фото товара" width="220" height="165">
             <div class="goods-wrapper">
             <h3 class="goods__title">
                 Набор для путешествий <br> «BAXTER OF CALIFORNIA»
@@ -164,7 +179,7 @@
             </div>
         </li>
         <li class="goods__item">
-            <img class="goods__img" src="img/Layer_38.jpg" alt="фото товара">
+            <img class="goods__img" src="img/Layer_38.jpg" alt="фото товара" width="220" height="165">
             <div class="goods-wrapper">
             <h3 class="goods__title">
                 Набор для путешествий <br> «BAXTER OF CALIFORNIA»
@@ -179,7 +194,7 @@
         </li>
 
         <li class="goods__item">
-            <img class="goods__img" src="img/Layer_38.jpg" alt="фото товара">
+            <img class="goods__img" src="img/Layer_38.jpg" alt="фото товара" width="220" height="165">
             <div class="goods-wrapper">
             <h3 class="goods__title">
                 Набор для путешествий <br> «BAXTER OF CALIFORNIA»
