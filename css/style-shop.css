@@ -325,6 +325,7 @@ text-transform: uppercase;
   .shop__fieldset {
      margin: 0;
      padding: 0;
+     margin-bottom: 32px;
   }
 
   .shop__brands-item,
@@ -347,6 +348,8 @@ text-transform: uppercase;
        position: relative;
        cursor: pointer;
   user-select: none;
+  margin-bottom: 19px;
+  padding-left: 3px;
   }
 
   .shop__brands-input::before,
@@ -358,7 +361,7 @@ text-transform: uppercase;
      height: 16px;
    
      border: 2px solid #000000;
-     left: -42px;
+     left: -40px;
   top: 0;
    }
 
@@ -374,7 +377,7 @@ text-transform: uppercase;
      width: 12px;
      height: 12px;
      top: 4px;
-  left: -38px;
+  left: -36px;
      
      background-image: url("../img/cross.png");
   background-repeat: no-repeat;
@@ -389,13 +392,20 @@ text-transform: uppercase;
      width: 12px;
      height: 12px;
      top: 6px;
-  left: -36px;
+  left: -34px;
      
   width: 8px;
   height: 8px;
   border-radius: 50%;
   background-color: #000000;
    }
+
+   .shop__goods-input:hover,
+   .shop__brands-input:hover {
+        color: #663d15;
+   }
+   
+
 
   .shop__filter-title {
      font-size: 24px;
@@ -410,13 +420,18 @@ margin-bottom: 12px;
        list-style: none;
   }
 
-  
-
   .shop__fieldset {
      border-style: none;
   }
 
+.shop__form-button {
+     display: inline-block;
+     vertical-align: top;
+     width: 100px;
+     height: 43px;
+     text-align: center;
 
+}
   /*                                                   фильтр*/
 
 
