@@ -1,586 +1,530 @@
- 
-/* @font-face {
+ /* @font-face {
      font-family: "PT Sans";
      src: url("../fonts/ptsansnarrowbold.woff2");
      src: url("../fonts/ptsansnarrowbold.woff");
      /*font-weight: bold;
      font-style: normal;*/
-     
-}
 
-/* @font-face {
+ }
+
+ /* @font-face {
      font-family: "PT Sans";
      src: url("../fonts/ptsansnarrow.woff2");
      src: url("../fonts/ptsansnarrow.woff");
      /*font-weight: narrow;
      font-style: normal;*/
-/* }  */
 
+ /* }  */
 
  /*                                       глобальные стили */
 
  html {
-     box-sizing: border-box;
+      box-sizing: border-box;
  }
 
  body {
-     background-image: url("../img/background.jpg");
-     background-repeat: no-repeat;
-     font-family: "PT Sans Narrow", Arial, sans-serif;
-     color:#ffffff;
+      background-image: url("../img/background.jpg");
+      background-repeat: no-repeat;
+      font-family: "PT Sans Narrow", Arial, sans-serif;
+      color: #ffffff;
  }
 
  *, *::before, *::after {
-     box-sizing: inherit;
+      box-sizing: inherit;
  }
 
  /*                                                 отладка*/
-img:not([alt]),
-label:not([for]),
-input[type=submit]:not([value]) {
-  outline:2px solid red;
-}
-/*                                                  отладка*/
 
- .visually-hidden {
-     position: absolute;
-     clip: rect(0 0 0 0);
-     width: 1px;
-     height: 1px;
-     margin: -1px;
+ img:not([alt]), label:not([for]), input[type=submit]:not([value]) {
+      outline: 2px solid red;
  }
 
- .container  {
-     width: 940px;
-     margin: 0 auto;
+ /*                                                  отладка*/
+
+ .visually-hidden {
+      position: absolute;
+      clip: rect(0 0 0 0);
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+ }
+
+ .container {
+      width: 940px;
+      margin: 0 auto;
  }
 
  .img {
-     max-width: 100%;
-     height: auto;
+      max-width: 100%;
+      height: auto;
  }
 
-.button {
-     color: #ffffff;
-     font-family: "PT Sans Narrow", Arial, sans-serif;
-font-size: 14px;
-font-weight: 700;
-line-height: 24px;
-text-transform: uppercase;
-background-color: #000000;
-border: none;
-text-decoration: none;
-}
+ .button {
+      color: #ffffff;
+      font-family: "PT Sans Narrow", Arial, sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 24px;
+      text-transform: uppercase;
+      background-color: #000000;
+      border: none;
+      text-decoration: none;
+ }
 
-.button:hover,
-.button:active {
-     background-color: #663d15;
-}
-
-
+ .button:hover, .button:active {
+      background-color: #663d15;
+ }
 
  /*                                        глобальные стили */
 
-
-  /*                                                   хедер*/
-.main-header {
-     margin:0;
-     background-color: #000000;
-}
-.main-nav {
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-}
-
-.main-nav__list {
-     list-style: none;
-     margin: 0;
-     display:flex;
-     align-items: center;
-     height: 72px;
-     padding-left: 0;
-}
-
-.main-nav__item {
-     height: 100%;
-     display:flex;
-     align-items: center;
-     margin-right: -4px;
-     
-}
-.main-nav__item:hover,
-.main-nav__item:active,
-.main-header__login:hover,
-.main-header__login:active {
-     background-color: #242424;
-     
-
-}
-
-.main-nav__link {
-     font-size: 16px;
-     font-weight: 400;
-     line-height: 20px;
-     text-transform: uppercase;
-     font-weight: 700;
-     margin-right: 21px;
-     margin-left: 20px;
-     color:#ffffff;
-     text-decoration: none;
-
-}
-
-.main-header__login {
-     display: flex;
-     position: relative;
-     font-size: 16px;
-     font-weight: 400;
-     line-height: 20px;
-     text-transform: uppercase;
-     font-weight: bold;
-     color:#ffffff;
-     text-decoration: none;
-     height:72px;
-     width: 80px;
-     align-items: center;
-     justify-content: center;
-     padding-left: 31px;
-}
-
-
-
-.main-header__login:before {
-     content: "";
-     position: absolute;
-     background-image: url("../img/login.png");
-     background-repeat: no-repeat;
-     width: 14px;
-     height: 14px;
-     right: 71px;
-    top: 31px;
-     opacity: 0.7;
-
-
-}
-
-.main-header__login:hover:before {
-     opacity: 1;
-}
-
-
-
-  /*                                                   хедер*/
-
-  /*                                                    лого*/
-  .main-logo {
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     padding-top: 62px;
-  }
-
-  /*                                                    лого*/
-
-
-/*                                               преимущества*/
-
-
-
-.merits__list {
-     display: flex;
-     flex-wrap: wrap;
-     padding-left: 0;
-     list-style: none;
-     justify-content: center;
-     padding-top: 22px;
-     margin-bottom: 63px;     
-
-}
-
-.merits__item {
-     display: flex;
-     flex-direction: column;
-     width: 33%;
-     align-items: center;
-     
-}
-
-
-
-.merits__title {
-     
-position: relative;
-color: #f7f4f1;
-font-size: 30px;
-font-weight: 700;
-line-height: 42px;
-font-weight: bold;
-text-transform: uppercase;
-}
-
-.merits__title:after {
-     content: "";
-     position: absolute;
-         width: 20px;
-    height: 20px;
-    background: #ffffff;
-    transform: rotate(45deg);
-    top: 55px;
-    left: 25px;
-
-}
-
-
-
-.merits__text {
-     text-transform: uppercase;
-     color: #f7f4f1;
-     font-weight: 700;
-font-size: 14px;
-font-weight: 700;
-line-height: 24px;
-width: 270px;
-margin-top: 31px;
-}
-/*                                               преимущества*/
-
-.top-content {
-     display:flex;
-     background-color: #f8f5f2;
-     color:#000000;
-     /* height: 419px; */
-     justify-content: space-between;
-    padding-top: 21px;
-    padding-left: 82px;
-    margin-bottom: 36px;
-    padding-bottom: 50px;
-}
-
-/*                                                    новости */
-.news,
-.gallery {
-     
-     width: 44%;
-    
-}
-
-.news {
-     position: relative;
-}
-
-.news:after {
-     content: "";
-     position: absolute;
-     background-image: url("../img/gray-bar.png");
-     background-repeat: no-repeat;
-     width: 8px;
-     height: 278px;
-     right: -14px;
-    top: 54px;
-}
-
-.news__title {
-font-family: "PT Sans Narrow", Arial, sans-serif;    
-font-size: 30px;
-font-weight: 700;
-line-height: 42px;
-font-weight: bold;
-text-transform: uppercase;
-margin-bottom: 20px;
-}
-
-.news__text,
-.contacts__text,
-.appointment__text {
-     font-family: "PT Sans Narrow", Arial, sans-serif;
-     font-size: 14px;
-font-weight: bold;
-line-height: 24px;
-text-transform: uppercase;
-margin-bottom: 0;
-
-}
-
-.merits__date {
-     font-family: "PT Sans Narrow", Arial, sans-serif;
-     font-size: 14px;
-font-weight: bold;
-line-height: 24px;
-display: block;
-margin-bottom: 21px;
-
-
-}
-
-.news__btn {
-     padding-left: 34px;
-     padding-right: 33px;
-     padding-top: 10px;
-     padding-bottom: 10px;
-     margin-top: 8px;
-    display: inline-block;
-    vertical-align: middle;
-}
-
-
-
-
-
-
-/*                                                    новости */
-
-/*                                                   галерея */
-
-
-.gallery__title {
-     font-family: "PT Sans Narrow", Arial, sans-serif;    
-font-size: 30px;
-font-weight: 700;
-line-height: 42px;
-font-weight: bold;
-text-transform: uppercase;
-margin-bottom: 29px;
-/* padding-left: 53px; */
-}
-
-.gallery__img {
-     margin-bottom: 38px;
-     border: 7px #ffffff solid;
-}
-
-.gallery__btn {
-     padding-left: 51px;
-    padding-right: 53px;
-    padding-top: 13px;
-    padding-bottom: 13px;
-    margin-right: 17px;
-}
-/*                                                   галерея */
-
-
-/*                                                  контакты */
-
-.bottom-content {
-     width: 100%;
-     background-color: #f8f5f2;
-     color:#000000;
-     height: 432px;
-     margin-bottom: 68px;
-     
-
-}
-
-.contacts {
-     display:flex;
-     justify-content: space-between;
-     padding-top: 20px;
-
-}
-
-.appointment__booking {
-     display: flex;
-     flex-direction: column;
-     width: 320px;
-    margin-right: 62px;
-}
-
-.contacts__info {
-     width:41%;
-     padding-left: 80px;
-    
-    position: relative;
-}
-
-.contacts__info:after {
-     content: "";
-     position: absolute;
-     background-image: url("../img/gray-bar.png");
-     background-repeat: no-repeat;
-     width: 8px;
-     height: 278px;
-     right: -6px;
-    top: 54px;
-}
-
-.contacts__title,
-.appointment__title {
-     font-family: "PT Sans Narrow", Arial, sans-serif;    
-font-size: 30px;
-font-weight: 700;
-line-height: 42px;
-font-weight: bold;
-text-transform: uppercase;
-margin-bottom: 20px;
-}
-
-.contacts__text {
-     
-}
-
-.contacts__time-work {
-     margin-top:20px;
-     margin-bottom: 31px;
-}
-
-.contacts__btn {
-     padding-left: 30px;
-    padding-right: 32px;
-     padding-top: 12px;
-     padding-bottom: 13px;
-     margin-right: 12px;
-}
-
-/*                                                         форма записи */
-.appointment__form {
-     display: flex;
-     flex-wrap: wrap;
-}
-
-.appointment__form-item {
-     display: flex;
-    flex-direction: column;
-    margin-right: 16px;
-}
-
-.appointment__form-title {
-     font-family: "PT Sans Narrow", Arial, sans-serif;
-     font-size: 14px;
-font-weight: 700;
-line-height: 24px;
-text-transform: uppercase;
-margin-bottom: 10px;
-padding-left: 17px;
-}
-
-.appointment__form-input {
-     background-color: transparent;
-  border: 2px solid #000000;
-  width: 122px;
-  height: 40px;
-  padding-left: 15px;
-}
-
-.appointment__form-input:focus {
-     border-color: #663d15;
-     outline:none;
-}
-
-.appointment__title {
-     margin-bottom: 4px;
-}
-
-.appointment__text {
-     margin-bottom: 12px;
-}
-
-.appointment__btn {
-     margin-top: 20px;
-     width: 286px;
-     padding-top: 6px;
-    padding-bottom: 10px;
-}
-/*                                                         форма записи */
-
-
-/*                                                                футер */
-
-.footer {
-     background-color: #242424;
-     text-transform: uppercase;
-     font-family: "PT Sans Narrow", Arial, sans-serif;
-     font-size: 14px;
-font-weight: 700;
-line-height: 24px;
-text-transform: uppercase;
-
-     
-}
-
-.footer-text {
-     margin:0;
-
-}
-
-.footer__content {
-     display: flex;
-     flex-direction: row;
-     /* justify-content: space-between; */
-     padding-top: 44px;
-     padding-bottom: 23px;
-     
-}
-
-.footer__contacts {
-     width:308px;
-}
-
-
-
-.footer__social {
-     margin-left: 96px;
-     margin-right: 252px;
-}
-
-.footer__contacts-link {
-     color: #ffffff;
-}
-.footer__contacts-link:hover {
-     text-decoration: none;
-}
-
-.footer__link {
-     display: inline-block;
-     width: 43px;
-     height: 43px;
-     background-color: #000000;
-     background-position: center;
-     background-repeat: no-repeat;
-     margin-right: 3px;
-}
-
-.footer__link:hover,
-.footer__link:focus,
-.footer__developer:hover,
-.footer__developer:focus
- {
-     
-     filter:invert(1);
-}
-
-
-.social-link--vk {
-     background-image: url("../img/vk.png");
-     
-}
-
-.social-link--fb {
-     background-image: url("../img/facebook.png");
-}
-
-.social-link--instagram {
-     background-image: url("../img/instagram.png");
-}
-
-.social--text {
-     vertical-align: middle;
-	text-align: center;
-
-}
-
-.footer__developer {
-     color: #ffffff;
-     text-decoration: none;
-     background-color: #000000;
-     width: 140px;
-     display: inline-block;
-     text-align: center;
-     padding-top: 11px;
-    padding-bottom: 11px;
-}
-
-
-.developer-text {
-     text-align: center;
-}
-/*                                                                футер */
+ /*                                                   хедер*/
+
+ .main-header {
+      margin: 0;
+      background-color: #000000;
+ }
+
+ .main-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+ }
+
+ .main-nav__list {
+      list-style: none;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      height: 72px;
+      padding-left: 0;
+ }
+
+ .main-nav__item {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      margin-right: -4px;
+ }
+
+ .main-nav__item:hover, .main-nav__item:active, .main-header__login:hover, .main-header__login:active {
+      background-color: #242424;
+ }
+
+ .main-nav__link {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20px;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-right: 21px;
+      margin-left: 20px;
+      color: #ffffff;
+      text-decoration: none;
+ }
+
+ .main-header__login {
+      display: flex;
+      position: relative;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20px;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: #ffffff;
+      text-decoration: none;
+      height: 72px;
+      width: 80px;
+      align-items: center;
+      justify-content: center;
+      padding-left: 31px;
+ }
+
+ .main-header__login:before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/login.png");
+      background-repeat: no-repeat;
+      width: 14px;
+      height: 14px;
+      right: 71px;
+      top: 31px;
+      opacity: 0.7;
+ }
+
+ .main-header__login:hover:before {
+      opacity: 1;
+ }
+
+ /*                                                   хедер*/
+
+ /*                                                    лого*/
+
+ .main-logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 62px;
+ }
+
+ /*                                                    лого*/
+
+ /*                                               преимущества*/
+
+ .merits__list {
+      display: flex;
+      flex-wrap: wrap;
+      padding-left: 0;
+      list-style: none;
+      justify-content: space-between;
+      padding-top: 22px;
+      margin-bottom: 63px;
+ }
+
+ .merits__item {
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+      align-items: center;
+ }
+
+ .merits__title {
+      position: relative;
+      color: #f7f4f1;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 42px;
+      font-weight: bold;
+      text-transform: uppercase;
+ }
+
+ .merits__title:after {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: #ffffff;
+      transform: rotate(45deg);
+      top: 55px;
+      left: 36%;
+ }
+
+ .merits__text {
+      text-transform: uppercase;
+      color: #f7f4f1;
+      font-weight: 700;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 24px;
+      width: 270px;
+      margin-top: 31px;
+ }
+
+ /*                                               преимущества*/
+
+ .top-content {
+      display: flex;
+      background-color: #f8f5f2;
+      color: #000000;
+      /* height: 419px; */
+      justify-content: space-between;
+      padding-top: 21px;
+      padding-left: 82px;
+      margin-bottom: 36px;
+      padding-bottom: 50px;
+ }
+
+ /*                                                    новости */
+
+ .news, .gallery {
+      width: 44%;
+ }
+
+ .news {
+      position: relative;
+ }
+
+ .news:after {
+      content: "";
+      position: absolute;
+      background-image: url("../img/gray-bar.png");
+      background-repeat: no-repeat;
+      width: 8px;
+      height: 278px;
+      right: -14px;
+      top: 54px;
+ }
+
+ .news__title {
+      font-family: "PT Sans Narrow", Arial, sans-serif;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 42px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+ }
+
+ .news__text, .contacts__text, .appointment__text {
+      font-family: "PT Sans Narrow", Arial, sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 24px;
+      text-transform: uppercase;
+      margin-bottom: 0;
+ }
+
+ .merits__date {
+      font-family: "PT Sans Narrow", Arial, sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 24px;
+      display: block;
+      margin-bottom: 21px;
+ }
+
+ .news__btn {
+      padding-left: 34px;
+      padding-right: 33px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      margin-top: 8px;
+      display: inline-block;
+      vertical-align: middle;
+ }
+
+ /*                                                    новости */
+
+ /*                                                   галерея */
+
+ .gallery__title {
+      font-family: "PT Sans Narrow", Arial, sans-serif;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 42px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 29px;
+      /* padding-left: 53px; */
+ }
+
+ .gallery__img {
+      margin-bottom: 38px;
+      border: 7px #ffffff solid;
+ }
+
+ .gallery__btn {
+      padding-left: 51px;
+      padding-right: 53px;
+      padding-top: 13px;
+      padding-bottom: 13px;
+      margin-right: 17px;
+ }
+
+ /*                                                   галерея */
+
+ /*                                                  контакты */
+
+ .bottom-content {
+      width: 100%;
+      background-color: #f8f5f2;
+      color: #000000;
+      height: 432px;
+      margin-bottom: 68px;
+ }
+
+ .contacts {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 20px;
+ }
+
+ .appointment__booking {
+      display: flex;
+      flex-direction: column;
+      width: 320px;
+      margin-right: 62px;
+ }
+
+ .contacts__info {
+      width: 41%;
+      padding-left: 80px;
+      position: relative;
+ }
+
+ .contacts__info:after {
+      content: "";
+      position: absolute;
+      background-image: url("../img/gray-bar.png");
+      background-repeat: no-repeat;
+      width: 8px;
+      height: 278px;
+      right: -6px;
+      top: 54px;
+ }
+
+ .contacts__title, .appointment__title {
+      font-family: "PT Sans Narrow", Arial, sans-serif;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 42px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+ }
+
+ .contacts__text {}
+
+ .contacts__time-work {
+      margin-top: 20px;
+      margin-bottom: 31px;
+ }
+
+ .contacts__btn {
+      padding-left: 30px;
+      padding-right: 32px;
+      padding-top: 12px;
+      padding-bottom: 13px;
+      margin-right: 12px;
+ }
+
+ /*                                                         форма записи */
+
+ .appointment__form {
+      display: flex;
+      flex-wrap: wrap;
+ }
+
+ .appointment__form-item {
+      display: flex;
+      flex-direction: column;
+      margin-right: 16px;
+ }
+
+ .appointment__form-title {
+      font-family: "PT Sans Narrow", Arial, sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 24px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      padding-left: 17px;
+ }
+
+ .appointment__form-input {
+      background-color: transparent;
+      border: 2px solid #000000;
+      width: 122px;
+      height: 40px;
+      padding-left: 15px;
+ }
+
+ .appointment__form-input:focus {
+      border-color: #663d15;
+      outline: none;
+ }
+
+ .appointment__title {
+      margin-bottom: 4px;
+ }
+
+ .appointment__text {
+      margin-bottom: 12px;
+ }
+
+ .appointment__btn {
+      margin-top: 20px;
+      width: 286px;
+      padding-top: 6px;
+      padding-bottom: 10px;
+ }
+
+ /*                                                         форма записи */
+
+ /*                                                                футер */
+
+ .footer {
+      background-color: #242424;
+      text-transform: uppercase;
+      font-family: "PT Sans Narrow", Arial, sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 24px;
+      text-transform: uppercase;
+ }
+
+ .footer-text {
+      margin: 0;
+ }
+
+ .footer__content {
+      display: flex;
+      flex-direction: row;
+      /* justify-content: space-between; */
+      padding-top: 44px;
+      padding-bottom: 23px;
+ }
+
+ .footer__contacts {
+      width: 308px;
+ }
+
+ .footer__social {
+      margin-left: 96px;
+      margin-right: 252px;
+ }
+
+ .footer__contacts-link {
+      color: #ffffff;
+ }
+
+ .footer__contacts-link:hover {
+      text-decoration: none;
+ }
+
+ .footer__link {
+      display: inline-block;
+      width: 43px;
+      height: 43px;
+      background-color: #000000;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin-right: 3px;
+ }
+
+ .footer__link:hover, .footer__link:focus, .footer__developer:hover, .footer__developer:focus {
+      filter: invert(1);
+ }
+
+ .social-link--vk {
+      background-image: url("../img/vk.png");
+ }
+
+ .social-link--fb {
+      background-image: url("../img/facebook.png");
+ }
+
+ .social-link--instagram {
+      background-image: url("../img/instagram.png");
+ }
+
+ .social--text {
+      vertical-align: middle;
+      text-align: center;
+ }
+
+ .footer__developer {
+      color: #ffffff;
+      text-decoration: none;
+      background-color: #000000;
+      width: 140px;
+      display: inline-block;
+      text-align: center;
+      padding-top: 11px;
+      padding-bottom: 11px;
+ }
+
+ .developer-text {
+      text-align: center;
+ }
+
+ /*                                                                футер */
