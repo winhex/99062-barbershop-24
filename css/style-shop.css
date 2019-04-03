@@ -55,6 +55,13 @@
       background-color: #663d15;
  }
 
+ .button-disabled,
+ .button:disabled {
+  cursor: default;
+  opacity: 0.5;
+  background-color: #000000;
+}
+
  /*                                        глобальные стили */
 
  /*                                                     хедер*/
@@ -124,10 +131,10 @@
       color: #ffffff;
       text-decoration: none;
       height: 72px;
-      width: 80px;
+      width: 103px;
       align-items: center;
       justify-content: center;
-      /* padding-left: 31px; */
+      padding-left: 31px;
       margin-left: auto;
  }
 
@@ -159,6 +166,8 @@
       line-height: 42px;
       text-transform: uppercase;
  }
+
+ /*                                           хлебные крошки*/
 
  .breadcrumbs {
       position: relative;
@@ -201,11 +210,14 @@
       position: absolute;
  }
 
+ /*                                           хлебные крошки*/
+
  /*                                                    сетка*/
 
  .main-content {
       display: flex;
       justify-content: space-between;
+      margin-bottom: 47px;
  }
 
  .left-column {
@@ -242,6 +254,7 @@
       display: flex;
       flex-wrap: wrap;
       margin-top: 5px;
+      margin-bottom: 27px;
  }
 
  .goods__item {
@@ -329,7 +342,7 @@
       height: 19px;
       border: 2px solid #000000;
       left: -39px;
-      top: 0px;
+      top: 1px;
  }
 
  .shop__goods-input::before {
@@ -384,7 +397,7 @@
  .shop__form-button {
       display: inline-block;
       vertical-align: top;
-      width: 100px;
+      width: 114px;
       height: 43px;
       text-align: center;
  }
@@ -406,6 +419,7 @@
       font-size: 14px;
       font-weight: 700;
       text-transform: uppercase;
+      margin-right: 4px;
  }
 
  .pager__item:hover:not(.pager__item--active) {
