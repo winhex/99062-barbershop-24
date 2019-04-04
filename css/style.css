@@ -535,3 +535,56 @@
  }
 
  /*                                                                футер */
+ 
+
+ /*                                                        модальное окно*/
+ 
+ .modal {
+   position: fixed;
+   color: #000000;
+   text-transform: uppercase;
+   margin-left: -230px;
+   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+
+  background-color: #f8f3f0;
+  top: 120px;
+  left: 50%;
+
+  width: 300px;
+  padding: 50px 80px;
+  
+}
+
+.modal-login {
+
+}
+
+.modal__close {
+      position: absolute;
+  top: 0;
+  right: -34px;
+  width: 22px;
+  height: 22px;
+
+  font-size: 0;
+
+  background-color: red;
+  border: 0;
+
+  cursor: pointer;
+}
+
+.modal__close::after {
+      content: "";
+      background-image: url(../img/cross.svg);
+      /*width: 22px;
+      height: 22px;*/
+      background-repeat: no-repeat;
+      background-size: 22px 22px;
+      
+      top: 5px;
+      right: 0px;
+
+  position: absolute;
+}
+/*                                                        модальное окно*/

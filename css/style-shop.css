@@ -187,6 +187,8 @@
 
  .breadcrumbs--active {
       opacity: 0.3;
+      pointer-events: none;
+      cursor: default;
  }
 
  .breadcrumbs__link {
