@@ -540,6 +540,7 @@
  /*                                                        модальное окно*/
  
  .modal {
+      display: none;
    position: fixed;
    color: #000000;
    text-transform: uppercase;
@@ -552,12 +553,77 @@
 
   width: 300px;
   padding: 50px 80px;
+  text-transform: uppercase;
+      font-weight: bold;
   
 }
 
-.modal-login {
+.modal__content {
+      display:flex
+      justify-content: space-between;
+      
+}
+
+/*.modal__remember,
+.modal__forgot {
+      display: inline-block;
+      vertical-align: middle;
+}*/
+
+.modal__title {
+      font-size: 30px;
+      line-height: 42px;
+}
+
+.modal__text {
+      font-size: 14px;
+      line-height: 24px;
+      
+}
+
+.modal__login,
+.modal__password {
+      min-width:300px;
+      border-color: #000000;
+      background-color: inherit;
+      padding-left: 10px;
+      outline-style: none;
+      box-sizing: border-box;
+      border:2px solid;
 
 }
+
+.modal__login::focus,
+.modal__password::focus {
+      border-color: #663d15;
+      
+}
+
+.modal__login::placeholder,
+.modal__password::placeholder {
+      color:#000000;
+      text-transform: uppercase;
+      font: inherit;
+      font-weight: bold;
+      opacity: 0.7;
+      
+}
+
+.modal__login {
+      margin-bottom: 8px;
+      background-image: url(../img/user.svg);
+  background-position: 270px center;
+  background-repeat: no-repeat;
+}
+
+.modal__password {
+      margin-bottom: 8px;
+      background-image: url(../img/lock.svg);
+  background-position: 270px center;
+  background-repeat: no-repeat;
+}
+
+
 
 .modal__close {
       position: absolute;
@@ -586,5 +652,11 @@
       right: 0px;
 
   position: absolute;
+}
+
+.modal__enter {
+      width: 100%;
+      min-height: 43px;
+      box-sizing: border-box;
 }
 /*                                                        модальное окно*/
