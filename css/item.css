@@ -1,0 +1,455 @@
+  /*                                         глобальные стили */
+
+  html {
+      box-sizing: border-box;
+}
+
+body {
+      font-family: "PT Sans Narrow", Arial, sans-serif;
+      background-image: url("../img/shop_background.jpg");
+}
+
+*, *::before, *::after {
+      box-sizing: inherit;
+}
+
+/*                                                 отладка*/
+
+img:not([alt]), img:not([width]), img:not([height]), label:not([for]), input[type=submit]:not([value]) {
+      outline: 2px solid red;
+}
+
+/*                                                 отладка*/
+
+.visually-hidden {
+      position: absolute;
+      clip: rect(0 0 0 0);
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      
+}
+
+.container {
+      width: 940px;
+      margin: 0 auto;
+}
+
+.img {
+      max-width: 100%;
+      height: auto;
+}
+
+.button {
+      color: #ffffff;
+      font-family: "PT Sans Narrow", Arial, sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 24px;
+      text-transform: uppercase;
+      background-color: #000000;
+      border: none;
+      text-decoration: none;
+      
+}
+
+.button:hover, .button:active {
+      background-color: #663d15;
+}
+
+.button-disabled,
+.button:disabled {
+    cursor: default;
+    opacity: 0.5;
+    background-color: #000000;
+}
+
+/*                                        глобальные стили */
+
+/*                                                     хедер*/
+
+.main-header {
+      margin: 0;
+      background-color: #000000;
+      margin-bottom: 50px;
+}
+
+.main-header__logo {
+      margin-right: 20px;
+      margin-left: 20px;
+}
+
+.main-nav {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+}
+
+.main-nav__list {
+      list-style: none;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      height: 72px;
+      padding-left: 0;
+      /* margin-right: 125px; */
+}
+
+.main-nav__item {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      margin-right: -3px;
+}
+
+.main-nav__item:hover, .main-nav__item:active, .main-header__login:hover, .main-header__login:active {
+      background-color: #242424;
+}
+
+.main-nav__link {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20px;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-right: 21px;
+      margin-left: 20px;
+      color: #ffffff;
+      text-decoration: none;
+}
+
+.nav-item--active {
+      border-bottom: 4px solid;
+      border-color: white;
+}
+
+.main-header__login {
+      display: flex;
+      position: relative;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20px;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: #ffffff;
+      text-decoration: none;
+      height: 72px;
+      width: 74px;
+      align-items: center;
+      justify-content: center;
+      padding-left: 31px;
+      margin-left: auto;
+}
+
+.main-header__login:before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/login.png");
+      background-repeat: no-repeat;
+      width: 14px;
+      height: 14px;
+      right: 71px;
+      top: 31px;
+      opacity: 0.7;
+}
+
+.main-header__login:hover:before {
+      opacity: 1;
+}
+
+/*                                                   хедер */
+
+/*                                         основной контент*/
+
+.item__title {
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 42px;
+      text-transform: uppercase;
+      margin-bottom: 17px;
+}
+
+/*                                           хлебные крошки*/
+
+.breadcrumbs {
+      /*position: relative;*/
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      text-transform: uppercase;
+      margin-bottom: 47px;
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      padding: 0;
+      margin: 0;
+
+
+      list-style: none;
+}
+
+.breadcrumbs__item {
+      /*position: relative;
+      display: inline-block;
+      margin-right: 37px;
+      vertical-align: top;*/
+      position: relative;
+
+      margin-right: 42px;
+}
+
+.breadcrumbs__item:last-child {
+    margin-right: 0;
+}
+
+.breadcrumbs--active {
+      opacity: 0.3;
+}
+
+.breadcrumbs__link {
+      position: relative;
+      text-decoration: none;
+      color: #000000;
+      font-weight: 700;
+}
+
+.breadcrumbs__link:hover, .breadcrumbs__link:active {
+      text-decoration: underline;
+}
+
+
+.breadcrumbs__item::after {
+    content: "";
+
+    position: absolute;
+    top: 7px;
+    right: -25px;
+
+    width: 8px;
+    height: 8px;
+
+    background-color: #000000;
+
+    transform: rotate(45deg);
+}
+
+.breadcrumbs--active::after {
+    display: none;
+}
+
+/*                                           хлебные крошки*/
+
+/*                                         основной контент*/
+.item-main {
+      margin-bottom: 49px;
+}
+
+.item__content {
+      display: flex;
+}
+
+.item__description {
+      width: 390px;
+      text-transform: uppercase;
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: bold;
+      margin-top: 61px;
+      margin-left: auto;
+
+}
+
+.item__gallery {
+
+      display: flex;
+      margin-top: 55px;
+      flex-direction: column;
+}
+
+.item__img {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.item__img-column {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+}
+
+.item__title {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 42px;
+    margin-top: 50px;
+}
+
+.item__description-title {
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 1.71;
+      text-transform: uppercase;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 29px;
+      width: 378px;
+}
+
+.item__number {
+      opacity: 0.3;
+}
+
+.item__text {
+      margin-bottom: 35px;
+}
+
+.goods__price,
+.goods__buy {
+      display: inline-block;
+      vertical-align: middle;
+}
+
+.item__price {
+      margin-bottom: 63px;
+}
+
+.goods__price {
+    width: 109px;
+    height: 43px;
+    line-height: 43px;
+    text-align: center;
+    background-color: #e5e5e5
+}
+
+.goods__buy {
+    width: 78px;
+    height: 43px;
+    line-height: 43px;
+    text-align: center;
+    background-color: #000000;
+    margin-left: -3px;
+}
+
+.item__set-description {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.item__list {
+      padding:0;
+      margin:0;
+      list-style: none;
+      margin-left: 21px;
+
+}
+
+.item__goods {
+      position: relative;
+}
+
+.item__goods::before {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: -19px;
+      width: 8px;
+      height: 8px;
+      background-color: #000000;
+      transform: rotate(45deg);
+
+}
+
+
+/*                                                   футер */
+
+.footer {
+      background-color: #242424;
+      color: #ffffff;
+      text-transform: uppercase;
+      font-family: "PT Sans Narrow", Arial, sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 24px;
+      text-transform: uppercase;
+}
+
+.footer-text {
+      margin: 0;
+}
+
+.footer__content {
+      display: flex;
+      flex-direction: row;
+      /* justify-content: space-between; */
+      padding-top: 44px;
+      padding-bottom: 23px;
+}
+
+.footer__contacts {
+      width: 308px;
+}
+
+.footer__social {
+      margin-left: 90px;
+      /* margin-right: 258px; */
+}
+
+.footer__contacts-link {
+      color: #ffffff;
+}
+
+.footer__contacts-link:hover {
+      text-decoration: none;
+}
+
+.footer__link {
+      display: inline-block;
+      width: 43px;
+      height: 43px;
+      background-color: #000000;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin-right: 3px;
+}
+
+.footer__link:hover, .footer__link:focus, .footer__developer:hover, .footer__developer:focus {
+      filter: invert(1);
+}
+
+.social-link--vk {
+      background-image: url("../img/vk.png");
+}
+
+.social-link--fb {
+      background-image: url("../img/facebook.png");
+}
+
+.social-link--instagram {
+      background-image: url("../img/instagram.png");
+}
+
+.social--text {
+      vertical-align: middle;
+      text-align: center;
+}
+
+.footer__copyright {
+      margin-left: auto;
+}
+
+.footer__developer {
+      color: #ffffff;
+      text-decoration: none;
+      background-color: #000000;
+      width: 140px;
+      display: inline-block;
+      text-align: center;
+      padding-top: 11px;
+      padding-bottom: 11px;
+}
+
+.developer-text {
+      text-align: center;
+}
+
+ /*                                                                футер  */
