@@ -30,7 +30,9 @@
  }
 
  .container {
-      width: 940px;
+      width: 96%;
+      max-width: 940px;
+      min-width: 350px;
       margin: 0 auto;
  }
 
@@ -80,6 +82,9 @@
       display: flex;
       justify-content: flex-start;
       align-items: center;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
  }
 
  .main-nav__list {
@@ -89,6 +94,9 @@
       align-items: center;
       height: 72px;
       padding-left: 0;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
       /* margin-right: 125px; */
  }
 
@@ -223,14 +231,13 @@
  }
 
  .left-column {
-      width: 180px;
-      min-height: 687px;
+      width: 23%;
+      
  }
 
  .right-column {
-      width: 700px;
-      /* Временно для сетки */
-      min-height: 687px;
+      max-width: 700px;
+      
  }
 
  /*                                                    сетка*/
@@ -257,6 +264,7 @@
       flex-wrap: wrap;
       margin-top: 5px;
       margin-bottom: 27px;
+      justify-content: center;
  }
 
  .goods__item {
@@ -457,15 +465,19 @@
       /* justify-content: space-between; */
       padding-top: 44px;
       padding-bottom: 23px;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
  }
 
  .footer__contacts {
-      width: 308px;
+      max-width: 308px;
  }
 
  .footer__social {
-      margin-left: 90px;
-      /* margin-right: 258px; */
+      
+      margin-left: auto;
+      margin-right: 27%;
  }
 
  .footer__contacts-link {
@@ -507,9 +519,7 @@
       text-align: center;
  }
 
- .footer__copyright {
-      margin-left: auto;
- }
+ 
 
  .footer__developer {
       color: #ffffff;
@@ -527,3 +537,42 @@
  }
 
  /*                                                                футер */
+ 
+ @media (max-width: 920px) {
+       .goods__item:nth-child(3n) {
+             margin-right: 20px;
+       }
+
+       .pager {
+            text-align: center;
+      }
+ }
+ 
+ @media (max-width: 620px) {
+       .main-header__logo {
+             margin: 0 auto;
+             margin-top: 10px;
+       }
+
+       .main-content {
+             -webkit-flex-wrap: wrap;
+                 -ms-flex-wrap: wrap;
+                     flex-wrap: wrap;
+           -webkit-justify-content: center;
+                   justify-content: center;
+       }
+
+       .footer__content {
+          justify-content: center;
+      }
+
+      .footer__contacts {
+          margin: 0 auto;
+      }
+
+      .footer__social {
+          margin: 0 auto;
+      }
+
+      
+ }
